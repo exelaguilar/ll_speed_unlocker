@@ -1,57 +1,58 @@
-# 🚀 LinkedIn Learning Speed Unlocker + Overlay
+# 📚 LinkedIn Learning Speed Unlocker
 
-A Tampermonkey userscript that unlocks the 2x speed cap on LinkedIn Learning videos. Includes:
-- ✅ Custom speed up to **15x**
-- ✅ Floating on-screen speed display
-- ✅ Visual `+` / `–` buttons
-- ✅ Keyboard support (`+` / `-` keys)
-- ✅ Speed persistence across videos
+Boost your LinkedIn Learning playback speed beyond the default 2x limit — up to **15x** — with an on-screen overlay and intuitive controls.
 
 ---
 
-## 🔧 Installation
+## ⚙️ Features
 
-1. **Install Tampermonkey**  
-   - Chrome/Edge: [Tampermonkey Chrome Extension](https://tampermonkey.net/?ext=dhdg&browser=chrome)  
-   - Firefox: [Tampermonkey for Firefox](https://tampermonkey.net/?ext=dhdg&browser=firefox)  
-
-2. **Install the Script**
-   - Copy the full userscript from [`LinkedIn-Learning-Speed-Unlocker.user.js`](./LinkedIn-Learning-Speed-Unlocker.user.js)
-   - Open your Tampermonkey dashboard
-   - Click `➕ Create a new script`
-   - Paste the code and **Save**
+- 🔓 Unlock video speeds up to **15x**
+- 🖱️ Overlay with `+` / `–` buttons
+- ⌨️ Keyboard shortcuts: `+` or `=` to increase, `-` to decrease
+- 💾 Saves your preferred speed between videos and page reloads
+- 🔁 Automatically applies on every LinkedIn Learning video
 
 ---
 
-## 🎮 How to Use
+## 🚀 One-Click Install
 
-- **Overlay** appears in the **bottom-left corner of the video player**
-- Click `+` / `–` to increase or decrease speed by `0.25x`
-- Use keyboard:
-  - `+` or `=` → Increase speed
-  - `-` → Decrease speed
-- Speed is remembered across videos and reloads
-- Works up to **15x** speed
+> 🧩 Requires the [Tampermonkey browser extension](https://www.tampermonkey.net/)
+
+[👉 Click here to install the script](https://raw.githubusercontent.com/exelaguilar/ll_speed_unlocker/main/LinkedIn-Learning-Speed-Unlocker.user.js)
 
 ---
 
-## 🧠 Technical Notes
+## 🛠️ Manual Installation
 
-- The script overrides the native `playbackRate` setter
-- Uses `localStorage` to persist desired speed
-- Re-applies settings when the video changes
-- Handles LinkedIn’s player replacing the `<video>` element dynamically
+1. **Install Tampermonkey**:
+   - [Chrome](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+   - [Firefox](https://addons.mozilla.org/firefox/addon/tampermonkey/)
+   - [Edge](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
----
+2. **Open Tampermonkey Dashboard**, click `+` to create a new script.
 
-## ❓ Troubleshooting
+3. **Paste the script code** from [`LinkedIn-Learning-Speed-Unlocker.user.js`](https://github.com/exelaguilar/ll_speed_unlocker/blob/main/LinkedIn-Learning-Speed-Unlocker.user.js)
 
-- ✅ Make sure the script is **enabled in Tampermonkey**
-- ✅ Refresh the LinkedIn Learning page after installing
-- ❌ Does **not work without Tampermonkey**
+4. **Save** and reload [LinkedIn Learning](https://www.linkedin.com/learning/) — you're good to go!
 
 ---
 
-## 📜 License
+## 📌 Notes
 
-MIT License
+- The speed overlay appears in the **bottom-left corner of the video player**.
+- Speed adjustments persist between videos and reloads.
+- Max speed is capped at **15x** for safety and stability.
+
+---
+
+## 🙋 FAQ
+
+**Does this work without Tampermonkey?**  
+No — this is a userscript, which requires a script manager like Tampermonkey.
+
+**Will this affect non-LinkedIn videos?**  
+No — it only runs on `linkedin.com/learning/*` pages.
+
+---
+
+Enjoy blazing-fast learning! 🚀
